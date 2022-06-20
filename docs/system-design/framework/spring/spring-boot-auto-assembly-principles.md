@@ -1,5 +1,5 @@
 ---
-title:  Spring Boot 自动装配原理
+title:  SpringBoot 自动装配原理详解
 category: 框架
 tag:
   - SpringBoot
@@ -142,7 +142,7 @@ public @interface SpringBootConfiguration {
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
-@AutoConfigurationPackage //作用：将main包下的所欲组件注册到容器中
+@AutoConfigurationPackage //作用：将main包下的所有组件注册到容器中
 @Import({AutoConfigurationImportSelector.class}) //加载自动装配类 xxxAutoconfiguration
 public @interface EnableAutoConfiguration {
     String ENABLED_OVERRIDE_PROPERTY = "spring.boot.enableautoconfiguration";

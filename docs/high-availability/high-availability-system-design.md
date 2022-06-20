@@ -1,4 +1,7 @@
-# 高可用系统设计
+---
+title: 高可用系统设计指南
+category: 高可用
+---
 
 一篇短小的文章，面试经常遇到的这个问题。本文主要包括下面这些内容：
 
@@ -42,7 +45,7 @@
 
 ### 3.限流
 
-流量控制（flow control），其原理是监控应用流量的 QPS 或并发线程数等指标，当达到指定的阈值时对流量进行控制，以避免被瞬时的流量高峰冲垮，从而保障应用的高可用性。——来自 alibaba-[Sentinel](https://github.com/alibaba/Sentinel "Sentinel") 的 wiki。
+流量控制（flow control），其原理是监控应用流量的 QPS 或并发线程数等指标，当达到指定的阈值时对流量进行控制，以避免被瞬时的流量高峰冲垮，从而保障应用的高可用性。——来自 [alibaba-Sentinel](https://github.com/alibaba/Sentinel "Sentinel") 的 wiki。
 
 ### 4.超时和重试机制设置
 

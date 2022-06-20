@@ -43,28 +43,29 @@
 
 ### 基础
 
-**知识点/面试题** : (必看:+1: )：
+**知识点/面试题总结** : (必看:+1: )：
 
-* [Java 基础常见知识点&面试题总结(上)](docs/java/basis/java-basic-questions-01.md)
-* [Java 基础常见知识点&面试题总结(中)](docs/java/basis/java-basic-questions-02.md)
-* [Java 基础常见知识点&面试题总结(下)](docs/java/basis/java-basic-questions-03.md)
+1. [Java 基础常见知识点&面试题总结(上)](docs/java/basis/java-basic-questions-01.md)
+2. [Java 基础常见知识点&面试题总结(中)](docs/java/basis/java-basic-questions-02.md)
+3. [Java 基础常见知识点&面试题总结(下)](docs/java/basis/java-basic-questions-03.md)
 
 **重要知识点详解** ：
 
 * [为什么 Java 中只有值传递？](docs/java/basis/why-there-only-value-passing-in-java.md)
-* [什么是反射机制？反射机制的应用场景有哪些？](docs/java/basis/reflection.md)
-* [代理模式详解：静态代理+JDK/CGLIB 动态代理实战](docs/java/basis/proxy.md)
-* [常见的 IO 模型有哪些？Java 中的 BIO、NIO、AIO 有啥区别?](docs/java/basis/io.md)
-* [BigDecimal解决浮点数运算精度丢失问题](docs/java/basis/bigdecimal.md)
-* **[泛型连环炮](docs/java/basis/generics.md)**
+* [Java 序列化详解](docs/java/basis/serialization.md)
+* [泛型&序列化详解](docs/java/basis/generics-and-wildcards.md)
+* [反射机制详解](docs/java/basis/reflection.md)
+* [Java 代理模式详解](docs/java/basis/proxy.md)
+* [IO 模型详解](docs/java/basis/io.md)
+* [BigDecimal 详解](docs/java/basis/bigdecimal.md)
 
 ### 集合
 
-**知识点/面试题** ：
+**知识点/面试题总结** ：
 
 1. [Java 集合常见知识点&面试题总结(上)](docs/java/collection/java-collection-questions-01.md) (必看 :+1:)
 2. [Java 集合常见知识点&面试题总结(下)](docs/java/collection/java-collection-questions-02.md) (必看 :+1:)
-2. [Java 容器使用注意事项总结](docs/java/collection/java集合使用注意事项.md)
+3. [Java 容器使用注意事项总结](docs/java/collection/java-collection-precautions-for-use.md)
 
 **源码分析** ：
 
@@ -74,25 +75,25 @@
 
 ### 并发
 
-**知识点/面试题** : (必看 :+1:)
+**知识点/面试题总结** : (必看 :+1:)
 
 1. [Java 并发常见知识点&面试题总结（基础篇）](docs/java/concurrent/java-concurrent-questions-01.md)
 2. [Java 并发常见知识点&面试题总结（进阶篇）](docs/java/concurrent/java-concurrent-questions-02.md)
 
 **重要知识点详解** ：
 
-1. **线程池** ：[Java 线程池详解](./docs/java/concurrent/java-thread-pool-summary.md)、[Java 线程池最佳实践](./docs/java/concurrent/java-thread-pool-best-practices.md)
-2. [ThreadLocal 关键字解析](docs/java/concurrent/threadlocal.md)
-3. [Java 并发容器总结](docs/java/concurrent/java-concurrent-collections.md)
-4. [Atomic 原子类总结](docs/java/concurrent/atomic-classes.md)
-5. [AQS 原理以及 AQS 同步组件总结](docs/java/concurrent/aqs.md)
-6. [CompletableFuture入门](docs/java/concurrent/completablefuture-intro.md)
+- **线程池** ：[Java 线程池详解](./docs/java/concurrent/java-thread-pool-summary.md)、[Java 线程池最佳实践](./docs/java/concurrent/java-thread-pool-best-practices.md)
+- [ThreadLocal 关键字解析](docs/java/concurrent/threadlocal.md)
+- [Java 并发容器总结](docs/java/concurrent/java-concurrent-collections.md)
+- [Atomic 原子类总结](docs/java/concurrent/atomic-classes.md)
+- [AQS 原理以及 AQS 同步组件总结](docs/java/concurrent/aqs.md)
+- [CompletableFuture入门](docs/java/concurrent/completablefuture-intro.md)
 
 ### JVM (必看 :+1:)
 
 JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html) 和周志明老师的[《深入理解Java虚拟机（第3版）》](https://book.douban.com/subject/34907497/) （强烈建议阅读多遍！）。
 
-1. **[Java 内存区域](./docs/java/jvm/memory-area)**
+1. **[Java 内存区域](./docs/java/jvm/memory-area.md)**
 2. **[JVM 垃圾回收](./docs/java/jvm/jvm-garbage-collection.md)**
 3. [JDK 监控和故障处理工具](./docs/java/jvm/jdk-monitoring-and-troubleshooting-tools.md)
 4. [类文件结构](./docs/java/jvm/class-file-structure.md)
@@ -111,8 +112,6 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 6. [Java 14~15 新特性概览](./docs/java/new-features/java14-15.md)
 
 ## 计算机基础
-
-👉 **[图解计算机基础 PDF 下载](https://mp.weixin.qq.com/s?__biz=Mzg2OTA0Njk0OA==&mid=100021725&idx=1&sn=2db9664ca25363139a81691043e9fd8f&chksm=4ea19a1679d61300d8990f7e43bfc7f476577a81b712cf0f9c6f6552a8b219bc081efddb5c54#rd)** 。
 
 ### 操作系统
 
@@ -153,35 +152,41 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 * [几道常见的字符串算法题总结 ](docs/cs-basics/algorithms/string-algorithm-problems.md)
 * [几道常见的链表算法题总结 ](docs/cs-basics/algorithms/linkedlist-algorithm-problems.md)
 * [剑指 offer 部分编程题](docs/cs-basics/algorithms/the-sword-refers-to-offer.md)
+* [十大经典排序算法](docs/cs-basics/algorithms/10-classical-sorting-algorithms.md)
 
 另外，[GeeksforGeeks]( https://www.geeksforgeeks.org/fundamentals-of-algorithms/) 这个网站总结了常见的算法 ，比较全面系统。
 
 ## 数据库
 
+### 基础
+
+- [数据库基础知识总结](docs/database/basis.md)
+- [字符集详解](docs/database/character-set.md)
+
 ### MySQL
 
-**总结：**
+**知识点/面试题总结：**
 
-1. [数据库基础知识总结](docs/database/basis.md)
-2. **[MySQL知识点总结](docs/database/mysql/mysql-questions-01.md)** (必看 :+1:)
-4. [一千行 MySQL 学习笔记](docs/database/mysql/a-thousand-lines-of-mysql-study-notes.md)
-5. [MySQL 高性能优化规范建议](docs/database/mysql/mysql-high-performance-optimization-specification-recommendations.md)
+- **[MySQL知识点总结](docs/database/mysql/mysql-questions-01.md)** (必看 :+1:)
+- [一千行 MySQL 学习笔记](docs/database/mysql/a-thousand-lines-of-mysql-study-notes.md)
+- [MySQL 高性能优化规范建议](docs/database/mysql/mysql-high-performance-optimization-specification-recommendations.md)
 
 **重要知识点：**
 
-1. [MySQL数据库索引总结](docs/database/mysql/mysql-index.md)
-2. [事务隔离级别(图文详解)](docs/database/mysql/transaction-isolation-level.md)
-3. [MySQL三大日志(binlog、redo log和undo log)详解](docs/database/mysql/mysql-logs.md)
-4. [InnoDB存储引擎对MVCC的实现](docs/database/mysql/innodb-implementation-of-mvcc.md)
-5. [一条 SQL 语句在 MySQL 中如何被执行的?](docs/database/mysql/how-sql-executed-in-mysql.md)
-6. [字符集详解：为什么不建议在MySQL中使用 utf8 ？](docs/database/character-set.md)
-7. [关于数据库中如何存储时间的一点思考](docs/database/mysql/some-thoughts-on-database-storage-time.md)
+- [MySQL数据库索引总结](docs/database/mysql/mysql-index.md)
+- [事务隔离级别(图文详解)](docs/database/mysql/transaction-isolation-level.md)
+- [MySQL三大日志(binlog、redo log和undo log)详解](docs/database/mysql/mysql-logs.md)
+- [InnoDB存储引擎对MVCC的实现](docs/database/mysql/innodb-implementation-of-mvcc.md)
+- [SQL语句在MySQL中的执行过程](docs/database/mysql/how-sql-executed-in-mysql.md)
+- [关于数据库中如何存储时间的一点思考](docs/database/mysql/some-thoughts-on-database-storage-time.md)
+- [MySQL中的隐式转换造成的索引失效](docs/database/mysql/index-invalidation-caused-by-implicit-conversion.md)
 
 ### Redis
 
-1. [Redis 常见问题总结](docs/database/redis/redis-questions-01.md)
-2. [3种常用的缓存读写策略](docs/database/redis/3-commonly-used-cache-read-and-write-strategies.md)
-2. [Redis 内存碎片](./docs/database/redis/redis-memory-fragmentation.md)
+- [Redis 常见问题总结](docs/database/redis/redis-questions-01.md)
+- [3种常用的缓存读写策略详解](docs/database/redis/3-commonly-used-cache-read-and-write-strategies.md)
+- [Redis 内存碎片详解](./docs/database/redis/redis-memory-fragmentation.md)
+- [Redis 集群详解](./docs/database/redis/redis-cluster.md)
 
 ## 搜索引擎
 
@@ -213,17 +218,18 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 #### Spring/SpringBoot (必看 :+1:)
 
-**知识点/面试题** :
+**知识点/面试题总结** :
 
-1. **[Spring 常见知识点&面试题总结](docs/system-design/framework/spring/spring-knowledge-and-questions-summary.md)**
-2. **[SpringBoot 入门指南](https://github.com/Snailclimb/springboot-guide)**
+- [Spring 常见知识点&面试题总结](docs/system-design/framework/spring/spring-knowledge-and-questions-summary.md)
+- [SpringBoot 常见知识点&面试题总结](docs/system-design/framework/spring/springboot-knowledge-and-questions-summary.md)
+- [Spring/Spring Boot 常用注解总结](./docs/system-design/framework/spring/spring-common-annotations.md)
+- [SpringBoot 入门指南](https://github.com/Snailclimb/springboot-guide)
 
 **重要知识点详解** ：
 
-1. **[Spring/Spring Boot 常用注解总结！安排！](./docs/system-design/framework/spring/spring-common-annotations.md)** 
-2. **[Spring 事务总结](docs/system-design/framework/spring/spring-transaction.md)** 
-3. [Spring 中都用到了那些设计模式?](docs/system-design/framework/spring/spring-design-patterns-summary.md)
-4. **[SpringBoot 自动装配原理](docs/system-design/framework/spring/spring-boot-auto-assembly-principles.md)**
+- [Spring 事务详解](docs/system-design/framework/spring/spring-transaction.md)
+- [Spring 中的设计模式详解](docs/system-design/framework/spring/spring-design-patterns-summary.md)
+- [SpringBoot 自动装配原理详解](docs/system-design/framework/spring/spring-boot-auto-assembly-principles.md)
 
 #### MyBatis
 
@@ -237,13 +243,10 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 #### 认证授权
 
-**[《认证授权基础》](docs/system-design/security/basis-of-authority-certification.md)** 这篇文章中我会介绍认证授权常见概念： **Authentication**, **Authorization** 以及 **Cookie**、**Session**、Token、**OAuth 2**、**SSO** 。如果你不清楚这些概念的话，建议好好阅读一下这篇文章。
-
-* **JWT** ：JWT（JSON Web Token）是一种身份认证的方式，JWT 本质上就一段签名的 JSON 格式的数据。由于它是带有签名的，因此接收者便可以验证它的真实性。相关阅读：
-  + [JWT 优缺点分析以及常见问题解决方案](docs/system-design/security/advantages&disadvantages-of-jwt.md)
-  + [适合初学者入门 Spring Security With JWT 的 Demo](https://github.com/Snailclimb/spring-security-jwt-guide)
-
-* **SSO(单点登录)** ：**SSO(Single Sign On)** 即单点登录说的是用户登陆多个子系统的其中一个就有权访问与其相关的其他系统。举个例子我们在登陆了京东金融之后，我们同时也成功登陆京东的京东超市、京东家电等子系统。相关阅读：[**SSO 单点登录看这篇就够了！**](docs/system-design/security/sso-intro.md)
+- [认证授权基础](docs/system-design/security/basis-of-authority-certification.md)
+- [JWT 基本概念详解](docs/system-design/security/jwt-intro.md)
+- [JWT 优缺点分析以及常见问题解决方案](docs/system-design/security/advantages&disadvantages-of-jwt.md)
+- [SSO 单点登录详解](docs/system-design/security/sso-intro.md)
 
 #### 数据脱敏
 
@@ -422,6 +425,10 @@ Dubbo 是一款国产的 RPC 框架，由阿里开源。相关阅读：
 * [入职培训一个月后的感受](https://javaguide.cn/about-the-author/feelings-after-one-month-of-induction-training/)
 * [从毕业到入职半年的感受](https://javaguide.cn/about-the-author/feelings-of-half-a-year-from-graduation-to-entry/)
 * [某培训机构盗我文章做成视频还上了B站热门](https://javaguide.cn/about-the-author/my-article-was-stolen-and-made-into-video-and-it-became-popular/)
+
+## Star 趋势
+
+![](https://api.star-history.com/svg?repos=Snailclimb/JavaGuide&type=Date)
 
 ## 公众号
 

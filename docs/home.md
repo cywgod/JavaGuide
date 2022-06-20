@@ -30,6 +30,10 @@ title: JavaGuide（Java学习&&面试指南）
 
 <a href="https://t.1yb.co/GXLF"><img src="https://img-blog.csdnimg.cn/2f61f3e2d1f2427da977340919e41616.png" style="margin: 0 auto;width:850px" /></a>
 
+## Star 趋势
+
+![](https://api.star-history.com/svg?repos=Snailclimb/JavaGuide&type=Date)
+
 ## 联系我
 
 想要参与项目维护或者学习交流的话，欢迎添加我的微信：“**JavaGuide1996**” 备注“**Github**”即可！
@@ -42,5 +46,5 @@ title: JavaGuide（Java学习&&面试指南）
 
 **《Java 面试突击》:** 由本文档衍生的专为面试而生的《Java 面试突击》V4.0 PDF 版本[公众号](#公众号)后台回复 **"面试突击"** 即可领取！
 
-![我的公众号](https://cdn.jsdelivr.net/gh/javaguide-tech/blog-images/2020-08/167598cd2e17b8ec.png)
+![我的公众号](https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/github/javaguide/books167598cd2e17b8ec-20220409194658233.png)
 

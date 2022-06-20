@@ -2,7 +2,7 @@ import { defineSidebarConfig } from "vuepress-theme-hope";
 
 export const sidebarConfig = defineSidebarConfig({
   // 应该把更精确的路径放置在前边
-  "/javaguide/": ["intro", "contribution-guideline", "faq", "todo"],
+  "/javaguide/": ["intro", "history", "contribution-guideline", "faq", "todo"],
   "/zhuanlan/": ["java-mian-shi-zhi-bei", "handwritten-rpc-framework"],
   "/open-source-project/": [
     "tutorial",
@@ -13,6 +13,13 @@ export const sidebarConfig = defineSidebarConfig({
     "machine-learning",
     "big-data",
   ],
+  "/books/": [
+    "cs-basics",
+    "database",
+    "search-engine",
+    "java",
+    "software-quality",
+  ],
   "/about-the-author/": [
     {
       text: "个人经历",
@@ -20,6 +27,7 @@ export const sidebarConfig = defineSidebarConfig({
       collapsable: false,
       children: [
         "internet-addiction-teenager",
+        "my-college-life",
         "javaguide-100k-star",
         "feelings-after-one-month-of-induction-training",
         "feelings-of-half-a-year-from-graduation-to-entry",
@@ -46,7 +54,7 @@ export const sidebarConfig = defineSidebarConfig({
     },
     {
       text: "个人经历",
-      icon: "zuozhe",
+      icon: "experience",
       prefix: "personal-experience/",
       collapsable: false,
       children: [
@@ -55,29 +63,43 @@ export const sidebarConfig = defineSidebarConfig({
       ],
     },
     {
+      text: "程序员",
+      icon: "code",
+      prefix: "programmer/",
+      collapsable: false,
+      children: [
+        "how-do-programmers-publish-a-technical-book",
+        "efficient-book-publishing-and-practice-guide",
+      ],
+    },
+    {
       text: "面试",
-      icon: "mianshi",
+      icon: "interview",
       prefix: "interview/",
       collapsable: false,
       children: [
         "the-experience-and-thinking-of-an-interview-experienced-by-an-older-programmer",
         "technical-preliminary-preparation",
         "screen-candidates-for-packaging",
+        "summary-of-spring-recruitment",
       ],
     },
     {
       text: "工作",
-      icon: "work0",
+      icon: "work",
       prefix: "work/",
       collapsable: false,
-      children: ["get-into-work-mode-quickly-when-you-join-a-company"],
+      children: [
+        "get-into-work-mode-quickly-when-you-join-a-company",
+        "employee-performance",
+      ],
     },
   ],
   // 必须放在最后面
   "/": [
     {
       text: "面试准备",
-      icon: "mianshi",
+      icon: "interview",
       prefix: "interview-preparation/",
       collapsable: true,
       children: [
@@ -102,10 +124,12 @@ export const sidebarConfig = defineSidebarConfig({
             "java-basic-questions-03",
             {
               text: "重要知识点",
-              icon: "important",
+              icon: "star",
               collapsable: true,
               children: [
                 "why-there-only-value-passing-in-java",
+                "serialization",
+                "generics-and-wildcards",
                 "reflection",
                 "proxy",
                 "io",
@@ -126,6 +150,7 @@ export const sidebarConfig = defineSidebarConfig({
             {
               text: "源码分析",
               collapsable: true,
+              icon: "star",
               children: [
                 "arraylist-source-code",
                 "hashmap-source-code",
@@ -144,7 +169,7 @@ export const sidebarConfig = defineSidebarConfig({
             "java-concurrent-questions-02",
             {
               text: "重要知识点",
-              icon: "important",
+              icon: "star",
               collapsable: true,
               children: [
                 "java-thread-pool-summary",
@@ -178,7 +203,7 @@ export const sidebarConfig = defineSidebarConfig({
         {
           text: "新特性",
           prefix: "new-features/",
-          icon: "features",
+          icon: "featured",
           collapsable: true,
           children: [
             "java8-common-new-features",
@@ -244,6 +269,7 @@ export const sidebarConfig = defineSidebarConfig({
             "string-algorithm-problems",
             "linkedlist-algorithm-problems",
             "the-sword-refers-to-offer",
+            "10-classical-sorting-algorithms",
           ],
         },
       ],
@@ -254,8 +280,12 @@ export const sidebarConfig = defineSidebarConfig({
       prefix: "database/",
       collapsable: true,
       children: [
-        "basis",
-        "character-set",
+        {
+          text: "基础",
+          icon: "basic",
+          collapsable: true,
+          children: ["basis", "character-set"],
+        },
         {
           text: "MySQL",
           prefix: "mysql/",
@@ -267,7 +297,7 @@ export const sidebarConfig = defineSidebarConfig({
             "mysql-high-performance-optimization-specification-recommendations",
             {
               text: "重要知识点",
-              icon: "important",
+              icon: "star",
               collapsable: true,
               children: [
                 "mysql-index",
@@ -276,6 +306,7 @@ export const sidebarConfig = defineSidebarConfig({
                 "innodb-implementation-of-mvcc",
                 "how-sql-executed-in-mysql",
                 "some-thoughts-on-database-storage-time",
+                "index-invalidation-caused-by-implicit-conversion",
               ],
             },
           ],
@@ -286,14 +317,16 @@ export const sidebarConfig = defineSidebarConfig({
           icon: "redis",
           collapsable: true,
           children: [
+            "cache-basics",
             "redis-questions-01",
             {
               text: "重要知识点",
-              icon: "important",
+              icon: "star",
               collapsable: true,
               children: [
                 "3-commonly-used-cache-read-and-write-strategies",
                 "redis-memory-fragmentation",
+                "redis-cluster",
               ],
             },
           ],
@@ -302,7 +335,7 @@ export const sidebarConfig = defineSidebarConfig({
     },
     {
       text: "开发工具",
-      icon: "Tools",
+      icon: "tool",
       prefix: "tools/",
       collapsable: true,
       children: [
@@ -322,9 +355,40 @@ export const sidebarConfig = defineSidebarConfig({
         },
         {
           text: "IDEA",
-          icon:"intellijidea",
+          icon: "intellijidea",
           link: "https://gitee.com/SnailClimb/awesome-idea-tutorial",
         },
+      ],
+    },
+    {
+      text: "常用框架",
+      prefix: "system-design/framework/",
+      icon: "framework",
+      collapsable: true,
+      children: [
+        {
+          text: "Spring&Spring Boot",
+          prefix: "spring/",
+          collapsable: true,
+          children: [
+            "spring-knowledge-and-questions-summary",
+            "springboot-knowledge-and-questions-summary",
+            "spring-common-annotations",
+            {
+              text: "重要知识点",
+              icon: "star",
+              collapsable: true,
+              children: [
+                "spring-transaction",
+                "spring-design-patterns-summary",
+                "spring-boot-auto-assembly-principles",
+              ],
+            },
+          ],
+        },
+        "mybatis/mybatis-interview",
+        "netty",
+        "springcloud/springcloud-intro",
       ],
     },
     {
@@ -342,39 +406,13 @@ export const sidebarConfig = defineSidebarConfig({
           children: ["RESTfulAPI", "naming", "refactoring"],
         },
         {
-          text: "常用框架",
-          prefix: "framework/",
-          icon: "framework",
-          collapsable: true,
-          children: [
-            {
-              text: "Spring",
-              prefix: "spring/",
-              collapsable: true,
-              children: [
-                "spring-knowledge-and-questions-summary",
-                "spring-common-annotations",
-                "spring-transaction",
-                "spring-design-patterns-summary",
-                "spring-boot-auto-assembly-principles",
-              ],
-            },
-            "mybatis/mybatis-interview",
-            "netty",
-            {
-              text: "SpringCloud",
-              prefix: "springcloud/",
-              children: ["springcloud-intro"],
-            },
-          ],
-        },
-        {
           text: "安全",
           prefix: "security/",
           icon: "security-fill",
           collapsable: true,
           children: [
             "basis-of-authority-certification",
+            "jwt-intro",
             "advantages&disadvantages-of-jwt",
             "sso-intro",
             "sentive-words-filter",
@@ -442,7 +480,7 @@ export const sidebarConfig = defineSidebarConfig({
     },
     {
       text: "高可用",
-      icon: "CalendarAvailability-1",
+      icon: "highavailable",
       prefix: "high-availability/",
       collapsable: true,
       children: [

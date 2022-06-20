@@ -117,9 +117,9 @@ Java 线程在运行的生命周期中的指定时刻只可能处于下面 6 种
 
 ![Java 线程的状态 ](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/19-1-29/Java%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%8A%B6%E6%80%81.png)
 
-线程在生命周期中并不是固定处于某一个状态而是随着代码的执行在不同状态之间切换。Java 线程状态变迁如下图所示（图源《Java 并发编程艺术》4.1.4 节）：
+线程在生命周期中并不是固定处于某一个状态而是随着代码的执行在不同状态之间切换。Java 线程状态变迁如下图所示（图源 [issue#736](https://github.com/Snailclimb/JavaGuide/issues/736)）：
 
-![Java 线程状态变迁 ](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/19-1-29/Java+%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E5%8F%98%E8%BF%81.png)
+![](./images/interview-questions/java-life-cycle.png)
 
 > 订正(来自[issue736](https://github.com/Snailclimb/JavaGuide/issues/736))：原图中 wait 到 runnable 状态的转换中，`join`实际上是`Thread`类的方法，但这里写成了`Object`。
 
@@ -207,14 +207,14 @@ Thread[线程 1,5,main]waiting get resource2
 Thread[线程 2,5,main]waiting get resource1
 ```
 
-线程 A 通过 `synchronized (resource1)` 获得 `resource1` 的监视器锁，然后通过`Thread.sleep(1000);`让线程 A 休眠 1s 为的是让线程 B 得到执行然后获取到 resource2 的监视器锁。线程 A 和线程 B 休眠结束了都开始企图请求获取对方的资源，然后这两个线程就会陷入互相等待的状态，这也就产生了死锁。上面的例子符合产生死锁的四个必要条件。
+线程 A 通过 `synchronized (resource1)` 获得 `resource1` 的监视器锁，然后通过`Thread.sleep(1000);`让线程 A 休眠 1s 为的是让线程 B 得到执行然后获取到 resource2 的监视器锁。线程 A 和线程 B 休眠结束了都开始企图请求获取对方的资源，然后这两个线程就会陷入互相等待的状态，这也就产生了死锁。
 
-学过操作系统的朋友都知道产生死锁必须具备以下四个条件：
+上面的例子符合产生死锁的四个必要条件：
 
 1. 互斥条件：该资源任意一个时刻只由一个线程占用。
-2. 请求与保持条件：一个进程因请求资源而阻塞时，对已获得的资源保持不放。
+2. 请求与保持条件：一个线程因请求资源而阻塞时，对已获得的资源保持不放。
 3. 不剥夺条件:线程已获得的资源在未使用完之前不能被其他线程强行剥夺，只有自己使用完毕后才释放资源。
-4. 循环等待条件:若干进程之间形成一种头尾相接的循环等待资源关系。
+4. 循环等待条件:若干线程之间形成一种头尾相接的循环等待资源关系。
 
 ### 如何预防和避免线程死锁?
 

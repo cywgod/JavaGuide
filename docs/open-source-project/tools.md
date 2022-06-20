@@ -1,6 +1,7 @@
 ---
 title: 开发工具
 category: 开源项目
+icon: tool
 ---
 
 ## Java 相关
@@ -20,6 +21,8 @@ category: 开源项目
 ## ZooKeeper 可视化管理
 
 - **[PrettyZoo](https://github.com/vran-dev/PrettyZoo)** ： 一个基于 Apache Curator 和 JavaFX 实现的 ZooKeeper 图形化管理客户端，颜值非常高，支持 Mac / Windows / Linux 。你可以使用 PrettyZoo 来实现对 ZooKeeper 的可视化增删改查。
+- **[zktools](https://zktools.readthedocs.io/en/latest/#installing)** ： 一个低延迟的 ZooKeeper 图形化管理客户端，颜值非常高，支持 Mac / Windows / Linux 。你可以使用 zktools 来实现对 ZooKeeper 的可视化增删改查。
+
 
 ## Markdown
 
